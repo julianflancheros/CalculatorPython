@@ -179,7 +179,7 @@ button__plus = Button(window, text="+", width = 5, height=2, command = lambda: c
 button__minus = Button(window, text="-", width = 5, height=2, command = lambda: click_on_button("-"), bg=color3, fg=colorText, font=BUTTONTEXTCALCULATOR, activebackground="#0B4F57", activeforeground=colorText)
 button__multi = Button(window, text="x", width = 5, height=2, command = lambda: click_on_button("*"), bg=color3, fg=colorText, font=BUTTONTEXTCALCULATOR, activebackground="#0B4F57", activeforeground=colorText)
 button__div = Button(window, text="÷", width = 5, height=2, command = lambda: click_on_button("÷"), bg=color3, fg=colorText, font=BUTTONTEXTCALCULATOR, activebackground="#0B4F57", activeforeground=colorText)
-button__dot = Button(window, text=",", width = 5, height=2, command = lambda: click_on_button("."), bg=color3, fg=colorText, font=BUTTONTEXTCALCULATOR, activebackground="#0B4F57", activeforeground=colorText)
+button__dot = Button(window, text=".", width = 5, height=2, command = lambda: click_on_button("."), bg=color3, fg=colorText, font=BUTTONTEXTCALCULATOR, activebackground="#0B4F57", activeforeground=colorText)
 button__equal = Button(window, text="=", width = 5, height=2, command = lambda: do_OPERATIONS_calculator(), bg=color3, fg=colorText, font=BUTTONTEXTCALCULATOR, activebackground="#0B4F57", activeforeground=colorText)
 button__minusOrplus = Button(window, text="+/-", width = 5, height=2, command = lambda: aditiveInvese(), bg=color3, fg=colorText, font=BUTTONTEXTCALCULATOR, activebackground="#0B4F57", activeforeground=colorText)
 button__percen = Button(window, text="%", width = 5, height=2, command = lambda: click_on_button("%"), bg=color3, fg=colorText, font=BUTTONTEXTCALCULATOR, activebackground="#0B4F57", activeforeground=colorText)
