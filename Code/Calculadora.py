@@ -146,8 +146,11 @@ def hover_Buttons_Numbers(button):
 
 #########################################################################################
 
-#Crate the new object
+#Create the new object
 window = Tk()
+
+#Change the icon 
+window.iconbitmap("myIcon.ico")
 
 #Define the name of the window 
 window.title("Calculator")
