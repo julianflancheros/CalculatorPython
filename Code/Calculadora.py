@@ -39,9 +39,6 @@ def click_on_button(valor):
     for caracter in e_inputUser.get():
         if caracter in OPERATIONS:
             COUNTER += 1
-    if COUNTER==2 and "*(" not in e_inputUser.get() :
-        do_OPERATIONS_calculator()
-        COUNTER=0      
     try:
         e_inputUser.insert(INDEXCALCULATORSTART, valor)
         INDEXCALCULATORSTART += 1
