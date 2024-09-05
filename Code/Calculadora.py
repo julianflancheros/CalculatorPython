@@ -1,5 +1,6 @@
 #Import the libraty
 from  tkinter import *
+import re 
 
 #########################################################################################
 #Define global variables 
@@ -67,14 +68,20 @@ def aditiveInvese():
 
 def do_OPERATIONS_calculator():
     equation = e_inputUser.get()
+     
     try:
         delete_inputUser()
         text_in_input()
-        if "÷0" in equation:
-            result = "Can't divide by zero" 
         if "%" in equation:
-            equation = float(equation.replace('%', ''))
-            result = equation/100
+            operation = re.sub(r'\d+', '', equation)
+            print(operation)
+            if len(operation) == 1: 
+                equation = equation.replace('%', '')
+                equation = f'{equation}/100'
+            else:
+                value = equation[equation.rfind(operation[0])+1:equation.find('%')]
+                result = float(value)/100
+                equation = str(equation[0:equation.rfind(operation[0])]) + str(equation[equation.find(operation[0])]) + str(result)
         else:
             if "÷" in equation:
                 equation = equation.replace('÷', '/')
