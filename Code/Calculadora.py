@@ -92,6 +92,8 @@ def do_OPERATIONS_calculator():
                     equation = equation.replace('*(', '(')
                     print(equation)
         result = eval(equation)
+    except ZeroDivisionError:
+        result = "Can't divide by zero"
     except SyntaxError:
         result = "Syntax ERROR"
     except ValueError:
